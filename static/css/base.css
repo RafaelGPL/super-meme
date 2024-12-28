@@ -1,0 +1,110 @@
+/* Dracula-inspired color palette */
+:root {
+    --dracula-background: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+}
+
+body {
+    background-color: var(--dracula-background);
+    color: var(--dracula-foreground);
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: var(--dracula-background);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--dracula-foreground) !important;
+}
+
+.nav-link:hover {
+    color: var(--dracula-pink) !important;
+}
+
+.nav-link.disabled {
+    color: var(--dracula-comment) !important;
+}
+
+.container {
+    background-color: var(--dracula-current-line);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--dracula-purple);
+    border-color: var(--dracula-purple);
+}
+
+.btn-primary:hover {
+    background-color: var(--dracula-pink);
+    border-color: var(--dracula-pink);
+}
+
+.btn-secondary {
+    background-color: var(--dracula-cyan);
+    border-color: var(--dracula-cyan);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dracula-green);
+    border-color: var(--dracula-green);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dracula-yellow);
+}
+
+a {
+    color: var(--dracula-purple);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dracula-pink);
+}
+
+/* Customize table */
+.table {
+    background-color: var(--dracula-current-line);
+    color: var(--dracula-foreground);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--dracula-purple);
+    color: var(--dracula-background);
+}
+
+.table td {
+    background-color: var(--dracula-background);
+    color: var(--dracula-foreground);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dracula-current-line);
+    color: var(--dracula-foreground);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--dracula-purple);
+}
+
+footer a:hover {
+    color: var(--dracula-pink);
+}
